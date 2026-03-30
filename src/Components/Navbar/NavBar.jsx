@@ -60,7 +60,7 @@ const NavBar = () => {
               </button>
 
               <ul
-                className={`md:hidden absolute top-20 ${menu ? "left-0" : "-left-50"} duration-500 space-y-2 shadow-md border border-gray-300`}
+                className={`md:hidden absolute top-16 ${menu ? "left-0" : "-left-50"} duration-500 space-y-2 shadow-md border border-gray-300 bg-white`}
               >
                 {navLinks}
               </ul>
@@ -72,20 +72,20 @@ const NavBar = () => {
             <ul className="flex hidden md:flex items-center">{navLinks}</ul>
             <div className="flex items-center gap-3 ">
               <div className="relative inline-flex items-center p-2 group cursor-pointer">
-            
+               
                 <FiShoppingCart className="text-2xl transition-transform group-hover:scale-110" />
 
-            
+               
                 <span
                   className={`
-    absolute top-1 right-0 
-    flex items-center justify-center 
-    w-4 h-4 
-    text-[10px] font-bold text-white
-    bg-red-600 rounded-full
-    border border-white/20
-    animate-bounce
-  `}
+                        absolute top-1 right-0 
+                        flex items-center justify-center 
+                        w-4 h-4 
+                        text-[10px] font-bold text-white
+                        bg-red-600 rounded-full
+                        border border-white/20
+                        animate-bounce
+                    `}
                 >
                   2
                 </span>
