@@ -72,10 +72,10 @@ const NavBar = () => {
             <ul className="flex hidden md:flex items-center">{navLinks}</ul>
             <div className="flex items-center gap-3 ">
               <div className="relative inline-flex items-center p-2 group cursor-pointer">
-                {/* শপিং কার্ড আইকন */}
+            
                 <FiShoppingCart className="text-2xl transition-transform group-hover:scale-110" />
 
-                {/* ব্যাজ (Badge - সংখ্যা ২) */}
+            
                 <span
                   className={`
     absolute top-1 right-0 
