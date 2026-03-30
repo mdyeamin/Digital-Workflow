@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FiShoppingCart } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 const navItems = [
@@ -28,7 +29,7 @@ const navLinks = navItems.map((nav) => (
       
       md:inline-block md:py-0 md:px-4
       md:bg-white md:text-black
-      md:relative md:overflow-hidden
+      
       
       md:after:content-[''] md:after:absolute md:after:bottom-0 md:after:left-0 
       md:after:w-full md:after:h-0.5 
@@ -47,7 +48,7 @@ const NavBar = () => {
   return (
     <>
       <div className="shadow w-full">
-        <div className="mx-5 md:mx-10">
+        <div className="mx-5">
           <div className="max-w-7xl mx-auto flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
               <button onClick={() => setMenu(!menu)}>
@@ -59,7 +60,7 @@ const NavBar = () => {
               </button>
 
               <ul
-                className={`md:hidden absolute top-16 ${menu ? "left-0" : "-left-50"} duration-500 space-y-2 shadow-md border border-gray-300`}
+                className={`md:hidden absolute top-20 ${menu ? "left-0" : "-left-50"} duration-500 space-y-2 shadow-md border border-gray-300`}
               >
                 {navLinks}
               </ul>
@@ -69,27 +70,47 @@ const NavBar = () => {
               </h4>
             </div>
             <ul className="flex hidden md:flex items-center">{navLinks}</ul>
-            <div className="buttons">
+            <div className="flex items-center gap-3 ">
+              <div className="relative inline-flex items-center p-2 group cursor-pointer">
+                {/* শপিং কার্ড আইকন */}
+                <FiShoppingCart className="text-2xl transition-transform group-hover:scale-110" />
+
+                {/* ব্যাজ (Badge - সংখ্যা ২) */}
+                <span
+                  className={`
+    absolute top-1 right-0 
+    flex items-center justify-center 
+    w-4 h-4 
+    text-[10px] font-bold text-white
+    bg-red-600 rounded-full
+    border border-white/20
+    animate-bounce
+  `}
+                >
+                  2
+                </span>
+              </div>
+              <p>Login</p>
               <button
-  className="
-    text-white px-5 py-2 font-bold uppercase tracking-widest text-[10px]
-    rounded-full 
-    bg-[linear-gradient(to_right,#4f38f6,#7922f8,#9315fa)]
-    bg-[length:200%_auto] 
-    bg-left
-    transition-all duration-500 ease-out
-    
-    md:px-4 md:py-2 md:text-xs
-    
-    lg:px-6 lg:py-3 lg:text-sm
-    
-    hover:bg-right
-    hover:scale-105 active:scale-95
-    shadow-lg hover:shadow-[#7922f8]/40
-  "
->
-  Get Started
-</button>
+                className="
+                    text-white px-5 py-2 font-bold uppercase tracking-widest text-[10px]
+                    rounded-full 
+                    bg-[linear-gradient(to_right,#4f38f6,#7922f8,#9315fa)]
+                    bg-[length:200%_auto] 
+                    bg-left
+                    transition-all duration-500 ease-out
+                    
+                    md:px-4 md:py-2 md:text-xs
+                    
+                    lg:px-6 lg:py-3 lg:text-sm
+                    
+                    hover:bg-right
+                    hover:scale-105 active:scale-95
+                    shadow-lg hover:shadow-[#7922f8]/40
+                "
+              >
+                Get Started
+              </button>
             </div>
           </div>
         </div>
