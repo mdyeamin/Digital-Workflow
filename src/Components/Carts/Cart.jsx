@@ -16,7 +16,7 @@ const Cart = ({ item, cart, setCart }) => {
         </div>
         <div>
           <h3 className="font-bold text-[#1a1a1a] text-lg">{item.name}</h3>
-          <p className="text-gray-400 font-bold text-sm">{item.price}</p>
+          <p className="text-gray-400 font-bold text-sm">${item.price}</p>
         </div>
       </div>
       <button
