@@ -15,6 +15,7 @@ const DigitalTool = ({ data, cart, setCart }) => {
     
   };
   return (
+
     <div className="flex flex-col bg-white border border-gray-100 rounded-4xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 group relative overflow-hidden">
       {/* Best Seller Badge */}
       <div className="absolute top-6 right-6 px-4 py-1 rounded-full bg-orange-100 text-orange-500 text-[10px] font-bold uppercase tracking-widest">
@@ -43,9 +44,9 @@ const DigitalTool = ({ data, cart, setCart }) => {
       {/* Features List */}
       <ul className="space-y-4 mb-10 flex-1">
         {
-        features.map(feature=>(
+        features.map((feature,index)=>(
 
-        <li className="flex items-center gap-3 text-sm text-gray-600 font-bold">
+        <li key={index} className="flex items-center gap-3 text-sm text-gray-600 font-bold">
           <FiCheck className="text-green-500 text-xl" />
           {feature}
         </li>
@@ -67,7 +68,8 @@ const DigitalTool = ({ data, cart, setCart }) => {
               shadow-lg hover:shadow-[#7922f8]/40
             "
       >
-        Buy Now
+        {cart.some(item=>item.id === data.id)? "Bought" :"Buy Now"}
+
       </button>
     </div>
   );

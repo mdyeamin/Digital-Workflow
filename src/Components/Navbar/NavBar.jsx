@@ -43,11 +43,11 @@ const navLinks = navItems.map((nav) => (
   </li>
 ));
 
-const NavBar = ({cart,setCart}) => {
+const NavBar = ({ cart, setCart }) => {
   const [menu, setMenu] = useState(false);
   return (
     <>
-      <div className="shadow w-full">
+      <div className="shadow w-full md:fixed md:top-0 z-10 bg-white">
         <div className="mx-5">
           <div className="max-w-7xl mx-auto flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
@@ -72,12 +72,11 @@ const NavBar = ({cart,setCart}) => {
             <ul className="flex hidden md:flex items-center">{navLinks}</ul>
             <div className="flex items-center gap-3 ">
               <div className="relative inline-flex items-center p-2 group cursor-pointer">
-               
                 <FiShoppingCart className="text-2xl transition-transform group-hover:scale-110" />
 
-               
-                <span
-                  className={`
+                {cart.length > 0 && (
+                  <span
+                    className={`
                         absolute top-1 right-0 
                         flex items-center justify-center 
                         w-4 h-4 
@@ -86,9 +85,10 @@ const NavBar = ({cart,setCart}) => {
                         border border-white/20
                         animate-bounce
                     `}
-                >
-                  {cart.length}
-                </span>
+                  >
+                    {cart.length}
+                  </span>
+                )}
               </div>
               <p>Login</p>
               <button
