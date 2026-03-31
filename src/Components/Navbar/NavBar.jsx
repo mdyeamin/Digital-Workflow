@@ -17,7 +17,7 @@ const navLinks = navItems.map((nav) => (
       
       block py-3 px-8 
       bg-white text-black 
-      font-bold uppercase tracking-widest text-sm
+      font-bold uppercase tracking-widest text-xs lg:text-sm
       border-b-2 border-transparent
       transition-all duration-300
       
@@ -43,13 +43,13 @@ const navLinks = navItems.map((nav) => (
   </li>
 ));
 
-const NavBar = ({ cart, setCart,menu, setMenu }) => {
+const NavBar = ({ cart,menu, setMenu }) => {
   
   return (
     <>
       <div className="shadow w-full md:fixed md:top-0 z-10 bg-white">
         <div className="mx-5">
-          <div className="max-w-7xl mx-auto flex justify-between items-center h-16">
+          <div className="max-w-7xl mx-auto flex justify-between items-center h-20">
             <div className="flex items-center gap-2">
               <button onClick={() => setMenu(!menu)}>
                 {menu ? (
@@ -60,7 +60,7 @@ const NavBar = ({ cart, setCart,menu, setMenu }) => {
               </button>
 
               <ul
-                className={`md:hidden absolute top-16 ${menu ? "left-0" : "-left-50"} duration-500 space-y-2 shadow-md border border-gray-300 bg-white z-10`}
+                className={`md:hidden absolute top-20 ${menu ? "left-0" : "-left-50"} duration-500 space-y-2 shadow-md border border-gray-300 bg-white z-10`}
               >
                 {navLinks}
               </ul>
@@ -69,7 +69,7 @@ const NavBar = ({ cart, setCart,menu, setMenu }) => {
                 DigiTools
               </h4>
             </div>
-            <ul className="flex hidden md:flex items-center">{navLinks}</ul>
+            <ul className=" hidden md:flex items-center">{navLinks}</ul>
             <div className="flex items-center gap-3 ">
               <div className="relative inline-flex items-center p-2 group cursor-pointer">
                 <FiShoppingCart className="text-2xl transition-transform group-hover:scale-110" />
