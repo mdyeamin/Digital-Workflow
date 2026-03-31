@@ -1,90 +1,133 @@
 [
   {
     "id": 1,
-    "name": "AI Content Generator",
-    "description": "Generate high-quality blog posts, ads, and social media content in seconds.",
+    "name": "CopyGenius AI",
+    "description": "Transform your ideas into high-converting copy for ads, emails, and blogs using neural language models.",
     "price": 29,
     "period": "monthly",
-    "tag": "Popular",
+    "tag": "Most Popular",
     "tagType": "popular",
-    "features": ["Unlimited generations", "SEO optimization", "Multi-language support", "Plagiarism check"],
-    "icon": "✍️"
+    "features": [
+      "Unlimited AI generations",
+      "SEO-optimized content",
+      "50+ Tone variations",
+      "Plagiarism detection",
+      "Multi-language support"
+    ],
+    "icon": "📝"
   },
   {
     "id": 2,
-    "name": "Smart Code Assistant",
-    "description": "Real-time code suggestions and bug fixing for professional developers.",
+    "name": "DevPilot Pro",
+    "description": "Your ultimate AI coding companion that writes, debugs, and documents code in real-time.",
     "price": 49,
     "period": "monthly",
-    "tag": "New",
+    "tag": "New Release",
     "tagType": "new",
-    "features": ["JS/Python/Go support", "VS Code Extension", "Unit test generator", "Git integration"],
+    "features": [
+      "Autocompletion for 20+ languages",
+      "Unit test generation",
+      "VS Code & IntelliJ support"
+    ],
     "icon": "💻"
   },
   {
     "id": 3,
-    "name": "Enterprise Workflow",
-    "description": "Complete productivity suite with AI automation for large scale teams.",
-    "price": 499,
+    "name": "Nexus Enterprise",
+    "description": "Scaling AI for big teams with advanced security, custom models, and priority infrastructure.",
+    "price": 899,
     "period": "yearly",
     "tag": "Best Seller",
     "tagType": "best-seller",
-    "features": ["Custom AI models", "Advanced analytics", "24/7 Priority support", "SSO & Security"],
+    "features": [
+      "Dedicated GPU clusters",
+      "Custom Model training",
+      "SSO & SOC2 Compliance",
+      "24/7 Priority support",
+      "Audit logs & Role access",
+      "Dedicated Account Manager"
+    ],
     "icon": "🚀"
   },
   {
     "id": 4,
-    "name": "Design Magic AI",
-    "description": "Transform text prompts into stunning UI components and vector assets.",
+    "name": "Visionary Studio",
+    "description": "Create high-end UI/UX designs and photorealistic assets directly from text descriptions.",
     "price": 19,
     "period": "monthly",
     "tag": "Trending",
     "tagType": "popular",
-    "features": ["Figma plugin", "High-res export", "Color palette generator", "Custom style training"],
+    "features": [
+      "4K Image generation",
+      "Figma live-sync",
+      "Vector asset export",
+      "Custom brand style-guide"
+    ],
     "icon": "🎨"
   },
   {
     "id": 5,
-    "name": "Data Insight Pro",
-    "description": "Powerful AI to analyze complex data sets and generate visual reports.",
-    "price": 99,
+    "name": "InsightFlow Pro",
+    "description": "Feed complex spreadsheets and get interactive dashboards and predictive analysis instantly.",
+    "price": 120,
     "period": "one-time",
     "tag": "Lifetime Access",
     "tagType": "new",
-    "features": ["Excel/CSV import", "Interactive charts", "PDF reporting", "Cloud storage"],
+    "features": [
+      "Advanced Data cleaning",
+      "Interactive 3D charts",
+      "Prediction algorithms"
+    ],
     "icon": "📊"
   },
   {
     "id": 6,
-    "name": "Video Master AI",
-    "description": "Convert long-form videos into viral short-form clips automatically.",
-    "price": 159,
+    "name": "ClipMaster AI",
+    "description": "Automatically repurpose your long videos into short viral clips for TikTok, Reels, and Shorts.",
+    "price": 199,
     "period": "yearly",
     "tag": "Top Rated",
     "tagType": "best-seller",
-    "features": ["Auto-captions", "Smart cropping", "Music sync", "Direct social export"],
+    "features": [
+      "AI Smart Cropping (9:16)",
+      "Auto-generated captions",
+      "Viral keyword extractor",
+      "Brand kit integration",
+      "Direct social media export"
+    ],
     "icon": "🎬"
   },
   {
     "id": 7,
-    "name": "Voice Synthesis Engine",
-    "description": "Create realistic AI voiceovers in any language with human-like emotions.",
+    "name": "EchoVoice AI",
+    "description": "Professional studio-quality voiceovers with emotional depth and 99% human-like accuracy.",
     "price": 35,
     "period": "monthly",
     "tag": "Hot",
     "tagType": "new",
-    "features": ["50+ Voice profiles", "Emotion control", "MP3/WAV Export", "Commercial rights"],
+    "features": [
+      "200+ Natural voices",
+      "Emotion & Tone control",
+      "Commercial usage license",
+      "Unlimited MP3 exports"
+    ],
     "icon": "🎙️"
   },
   {
     "id": 8,
-    "name": "AI SEO Optimizer",
-    "description": "Auto-optimize your website ranking using deep learning algorithms.",
-    "price": 79,
+    "name": "RankBoost SEO",
+    "description": "AI-driven SEO audits and automatic backlink monitoring to crush your competition.",
+    "price": 69,
     "period": "monthly",
     "tag": "Recommended",
     "tagType": "popular",
-    "features": ["Keyword research", "Backlink analysis", "Competitor tracking", "Auto-sitemap"],
+    "features": [
+      "Real-time SERP tracking",
+      "Competitor gap analysis",
+      "Auto-generated Meta tags",
+      "Technical SEO fix alerts",
+      "Weekly performance reports"
+    ],
     "icon": "🔍"
   }
 ]

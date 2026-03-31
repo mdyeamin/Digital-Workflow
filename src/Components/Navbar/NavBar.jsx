@@ -43,7 +43,7 @@ const navLinks = navItems.map((nav) => (
   </li>
 ));
 
-const NavBar = () => {
+const NavBar = ({cart,setCart}) => {
   const [menu, setMenu] = useState(false);
   return (
     <>
@@ -87,7 +87,7 @@ const NavBar = () => {
                         animate-bounce
                     `}
                 >
-                  2
+                  {cart.length}
                 </span>
               </div>
               <p>Login</p>

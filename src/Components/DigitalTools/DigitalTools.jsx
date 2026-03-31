@@ -1,9 +1,18 @@
-import React, { use } from "react";
-import { FiCheck } from "react-icons/fi";
+import React, { use, useState } from "react";
 import DigitalTool from "../DigitalTool/DigitalTool";
 
-const DigitalTools = ({ digiToolsFetch }) => {
+const DigitalTools = ({ digiToolsFetch, cart,setCart }) => {
+  const [products, setProducts] = useState("Products");
   const digiToolsData = use(digiToolsFetch).data;
+  const handleProducts = () => {
+    setProducts("Products");
+  };
+
+  const handleCart = () => {
+    setProducts("Cart");
+  };
+  console.log(products);
+
   return (
     <section className="py-16 px-4 bg-white">
       {/* === Header Part === */}
@@ -19,18 +28,28 @@ const DigitalTools = ({ digiToolsFetch }) => {
         {/* --- Tab Switcher --- */}
         <div className="flex items-center justify-center mt-8">
           <div className="inline-flex items-center p-1 bg-white border border-gray-100 rounded-full shadow-sm">
-            <button className="px-6 py-2 md:px-10 md:py-3 rounded-full bg-[#7922f8] text-white font-bold text-xs md:text-sm shadow-lg transition-transform active:scale-95">
+            <button
+              onClick={handleProducts}
+              className={`px-6 py-2 md:px-10 md:py-3 rounded-full ${products === "Products" && "bg-[#7922f8] text-white font-bold text-xs md:text-sm shadow-lg transition-transform active:scale-95"} ${products === "Cart" && "text-gray-400 font-bold text-xs md:text-sm hover:text-[#7922f8] transition-colors"} cursor-pointer`}
+            >
               Products
             </button>
-            <button className="px-6 py-2 md:px-10 md:py-3 rounded-full text-gray-400 font-bold text-xs md:text-sm hover:text-[#7922f8] transition-colors">
-              Cart (2)
+            <button
+              onClick={handleCart}
+              className={`px-6 py-2 md:px-10 md:py-3 rounded-full ${products === "Cart" && "bg-[#7922f8] text-white font-bold text-xs md:text-sm shadow-lg transition-transform active:scale-95"} ${products === "Products" && "text-gray-400 font-bold text-xs md:text-sm hover:text-[#7922f8] transition-colors"} cursor-pointer`}
+            >
+              Cart ({cart.length})
             </button>
           </div>
         </div>
       </div>
-      {digiToolsData.map((data) => (
-        <DigitalTool key={data.id} data={data} />
-      ))}
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {digiToolsData.map((data) => (
+            <DigitalTool key={data.id} data={data} cart={cart} setCart={setCart}/>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

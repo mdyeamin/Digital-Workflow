@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../../assets/banner.png";
+import banner from "../../assets/ai.jpg";
 import { FiPlayCircle } from "react-icons/fi";
 const Header = () => {
   return (
