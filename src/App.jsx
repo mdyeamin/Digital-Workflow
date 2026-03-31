@@ -8,6 +8,8 @@ import { Suspense, useState } from 'react'
 import { ToastContainer } from 'react-toastify'
 import HowItWorks from './Components/HowItWorks/HowItWorks'
 import Pricing from './Components/Pricing/Pricing'
+import Newsletter from './Components/Newsletter/Newsletter'
+import Footer from './Components/Footer/Footer'
 
 
 const digiToolsFetch = axios.get("digitools.json")
@@ -32,11 +34,16 @@ function App() {
       <DigitalTools cart={cart} setCart={setCart} digiToolsFetch={digiToolsFetch}/>
       </Suspense>
       <HowItWorks/>
-    <ToastContainer />
 
     <Suspense fallback={<span className="loading loading-ring loading-xl"></span>}>
       <Pricing pricingPromise={pricingPromise}/>
     </Suspense>
+
+<Newsletter/>
+<Footer/>
+
+
+    <ToastContainer />
     </>
     
   )

@@ -7,6 +7,8 @@
     "period": "monthly",
     "tag": "Most Popular",
     "tagType": "popular",
+    "tagBg": "bg-orange-100",
+    "tagText": "text-orange-600",
     "features": [
       "Unlimited AI generations",
       "SEO-optimized content",
@@ -24,6 +26,8 @@
     "period": "monthly",
     "tag": "New Release",
     "tagType": "new",
+    "tagBg": "bg-blue-100",
+    "tagText": "text-blue-600",
     "features": [
       "Autocompletion for 20+ languages",
       "Unit test generation",
@@ -39,6 +43,8 @@
     "period": "yearly",
     "tag": "Best Seller",
     "tagType": "best-seller",
+    "tagBg": "bg-purple-100",
+    "tagText": "text-[#7922f8]",
     "features": [
       "Dedicated GPU clusters",
       "Custom Model training",
@@ -57,6 +63,8 @@
     "period": "monthly",
     "tag": "Trending",
     "tagType": "popular",
+    "tagBg": "bg-orange-100",
+    "tagText": "text-orange-600",
     "features": [
       "4K Image generation",
       "Figma live-sync",
@@ -73,6 +81,8 @@
     "period": "one-time",
     "tag": "Lifetime Access",
     "tagType": "new",
+    "tagBg": "bg-green-100",
+    "tagText": "text-green-600",
     "features": [
       "Advanced Data cleaning",
       "Interactive 3D charts",
@@ -88,6 +98,8 @@
     "period": "yearly",
     "tag": "Top Rated",
     "tagType": "best-seller",
+    "tagBg": "bg-purple-100",
+    "tagText": "text-[#7922f8]",
     "features": [
       "AI Smart Cropping (9:16)",
       "Auto-generated captions",
@@ -105,6 +117,8 @@
     "period": "monthly",
     "tag": "Hot",
     "tagType": "new",
+    "tagBg": "bg-red-100",
+    "tagText": "text-red-600",
     "features": [
       "200+ Natural voices",
       "Emotion & Tone control",
@@ -121,6 +135,8 @@
     "period": "monthly",
     "tag": "Recommended",
     "tagType": "popular",
+    "tagBg": "bg-orange-100",
+    "tagText": "text-orange-600",
     "features": [
       "Real-time SERP tracking",
       "Competitor gap analysis",

@@ -9,7 +9,7 @@ const Pricing = ({ pricingPromise }) => {
       <div className="max-w-7xl mx-auto text-center">
         {/* === Header === */}
         <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#1a1a1a] mb-4">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-[#1a1a1a] mb-4">
             Simple, Transparent Pricing
           </h2>
           <p className="text-gray-500 font-medium max-w-lg mx-auto">

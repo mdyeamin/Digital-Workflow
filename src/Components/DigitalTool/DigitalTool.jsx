@@ -3,7 +3,7 @@ import { FiCheck } from "react-icons/fi";
 import { toast } from "react-toastify";
 
 const DigitalTool = ({ data, cart, setCart }) => {
-    const {name,tag,icon,description,price,features}= data;
+    const {name,tag,icon,description,price,features,tagBg,tagText}= data;
     
 
 
@@ -19,7 +19,7 @@ const DigitalTool = ({ data, cart, setCart }) => {
 
     <div className="flex flex-col bg-white border border-gray-100 rounded-4xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 group relative overflow-hidden">
       {/* Best Seller Badge */}
-      <div className="absolute top-6 right-6 px-4 py-1 rounded-full bg-orange-100 text-orange-500 text-[10px] font-bold uppercase tracking-widest">
+      <div className={`absolute top-6 right-6 px-4 py-1 rounded-full ${tagBg} ${tagText} text-[10px] font-bold uppercase tracking-widest`}>
         {tag}
       </div>
 
