@@ -9,7 +9,7 @@ const Cart = ({ item, cart, setCart }) => {
   };
 
   return (
-    <div className="flex items-center justify-between p-6 bg-gray-50/50 rounded-2xl border border-gray-50 transition-hover hover:border-gray-200">
+    <div className="flex items-center justify-between p-2 md:p-6 bg-gray-50/50 rounded-2xl border border-gray-50 transition-hover hover:border-gray-200">
       <div className="flex items-center gap-5">
         <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-2xl shadow-sm">
           {item.icon}

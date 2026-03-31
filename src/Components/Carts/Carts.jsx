@@ -16,10 +16,10 @@ const Carts = ({ cart, setCart }) => {
       {cart.length === 0 ? (
         <Empty />
       ) : (
-        <div className=" flex items-center justify-center p-4">
+        <div className=" flex items-center justify-center">
           {/* Main Cart Container */}
 
-          <div className="w-full max-w-4xl bg-white rounded-4xl shadow-sm border border-gray-100 p-8 md:p-12">
+          <div className="w-full max-w-4xl bg-white rounded-4xl shadow-sm border border-gray-100 p-4 md:p-8">
             {/* Title */}
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-8">
               Your Cart
