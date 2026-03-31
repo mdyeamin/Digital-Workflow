@@ -3,7 +3,7 @@ import banner from "../../assets/ai.jpg";
 import { FiPlayCircle } from "react-icons/fi";
 const Header = () => {
   return (
-    <div className="bg-white text-[#1a1a1a] flex items-center px-6 lg:px-12 my-10">
+    <div className="bg-white text-[#1a1a1a] flex items-center px-6 lg:px-12 my-10 mt-30">
       <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-5 lg:gap-12 items-center">
         <div className="space-y-4 md:space-y-8 text-center md:text-left">
           <div
