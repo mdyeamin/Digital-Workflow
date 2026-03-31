@@ -16,7 +16,7 @@ const Carts = ({ cart, setCart }) => {
       {cart.length === 0 ? (
         <Empty />
       ) : (
-        <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+        <div className=" flex items-center justify-center p-4">
           {/* Main Cart Container */}
 
           <div className="w-full max-w-4xl bg-white rounded-4xl shadow-sm border border-gray-100 p-8 md:p-12">

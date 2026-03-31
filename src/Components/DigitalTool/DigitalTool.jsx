@@ -1,5 +1,6 @@
 import React from "react";
 import { FiCheck } from "react-icons/fi";
+import { TiTick } from "react-icons/ti";
 import { toast } from "react-toastify";
 
 const DigitalTool = ({ data, cart, setCart }) => {
@@ -69,7 +70,9 @@ const DigitalTool = ({ data, cart, setCart }) => {
               shadow-lg hover:shadow-[#7922f8]/40
             "
       >
-        {cart.some(item=>item.id === data.id)? "Bought" :"Buy Now"}
+        {cart.some(item=>item.id === data.id)? <span className="flex items-center justify-center gap-1">
+      <TiTick className="text-xl" /> Added to Cart
+    </span> :"Buy Now"}
 
       </button>
     </div>
