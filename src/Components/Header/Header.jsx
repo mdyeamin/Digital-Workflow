@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="bg-white text-[#1a1a1a] flex items-center px-6 lg:px-12 my-10">
       <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-5 lg:gap-12 items-center">
-        <div className="space-y-8 text-center md:text-left">
+        <div className="space-y-4 md:space-y-8 text-center md:text-left">
           <div
             className="
             inline-flex items-center gap-2 p-1 px-3 
@@ -38,17 +38,17 @@ const Header = () => {
             {/* 1. Explore Products Button */}
             <button
               className="
-      /* --- Base Style (Mobile) --- */
+    
       text-white px-6 py-3 font-bold uppercase tracking-widest text-[10px] sm:text-xs
       rounded-full 
       bg-[linear-gradient(to_right,#4f38f6,#7922f8,#9315fa)]
       bg-[length:200%_auto] bg-left
       transition-all duration-500 ease-out
       
-      /* --- Responsive (Desktop/LG) --- */
+    
       lg:px-8 lg:py-3.5 lg:text-sm
       
-      /* --- Interaction --- */
+    
       hover:bg-right hover:scale-105 active:scale-95
       shadow-lg hover:shadow-[#7922f8]/40
     "
@@ -59,7 +59,7 @@ const Header = () => {
             {/* 2. Watch Demo Button */}
             <button
               className="
-      group relative px-6 py-3 font-bold uppercase tracking-widest text-[10px] sm:text-xs
+      group relative px-6 py-2 font-bold uppercase tracking-widest text-[10px] sm:text-xs
       rounded-full bg-white transition-all duration-500 overflow-hidden
       flex items-center justify-center gap-2 sm:gap-3
       
