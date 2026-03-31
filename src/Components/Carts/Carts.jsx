@@ -39,7 +39,7 @@ const Carts = ({ cart, setCart }) => {
               <div className="flex justify-between items-center px-2">
                 <span className="text-gray-400 font-bold">Total:</span>
                 <span className="text-3xl font-black text-[#1a1a1a]">
-                  {sum}
+                 ${sum}
                 </span>
               </div>
 

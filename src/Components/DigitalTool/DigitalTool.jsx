@@ -11,7 +11,8 @@ const DigitalTool = ({ data, cart, setCart }) => {
      const isCart =  cart.some(item=>item.id === data.id)
      
      !isCart && setCart([...cart,data]);
-     isCart && toast.warning("This Cart Already added!");
+     !isCart && toast.success(`${data.name} added successfully `);
+     isCart && toast.warning(`${data.name} card already added`);
     
   };
   return (
