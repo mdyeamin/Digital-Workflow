@@ -19,8 +19,8 @@ const Newsletter = () => {
    
           </div>
 
-          {/* Action Buttons / Input Area */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
+          
+          <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
             <button
               className="
               w-full sm:w-auto px-10 py-5 rounded-2xl bg-white text-[#7922f8] 

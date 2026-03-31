@@ -47,7 +47,7 @@ const NavBar = ({ cart,menu, setMenu }) => {
   
   return (
     <>
-      <div className="shadow w-full md:fixed md:top-0 z-10 bg-white">
+      <div className="shadow w-full fixed top-0 z-10 bg-white">
         <div className="mx-5">
           <div className="max-w-7xl mx-auto flex justify-between items-center h-20">
             <div className="flex items-center gap-2">

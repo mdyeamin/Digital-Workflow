@@ -99,7 +99,7 @@ const Header = () => {
         </div>
 
         <div className="relative group p-4 ">
-          <div className=" transition-opacity group-hover:opacity-100 group-hover:shadow-[0_0_20px_0_rgba(34,211,238,0.3)]"></div>
+          {/* <div className=" transition-opacity group-hover:opacity-100 group-hover:shadow-[0_0_20px_0_rgba(34,211,238,0.3)]"></div> */}
 
           <div className="relative aspect-square overflow-hidden flex items-center justify-center ">
             <img
