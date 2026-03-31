@@ -87,7 +87,7 @@ const Header = () => {
               <span
                 className="
         relative z-10
-        bg-gradient-to-r from-[#4f38f6] via-[#7922f8] to-[#9315fa]
+        bg-linear-to-r from-[#4f38f6] via-[#7922f8] to-[#9315fa]
         bg-clip-text text-transparent
         group-hover:text-white transition-all duration-500
       "

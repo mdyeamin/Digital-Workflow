@@ -60,7 +60,7 @@ const NavBar = () => {
               </button>
 
               <ul
-                className={`md:hidden absolute top-16 ${menu ? "left-0" : "-left-50"} duration-500 space-y-2 shadow-md border border-gray-300 bg-white`}
+                className={`md:hidden absolute top-16 ${menu ? "left-0" : "-left-50"} duration-500 space-y-2 shadow-md border border-gray-300 bg-white z-10`}
               >
                 {navLinks}
               </ul>

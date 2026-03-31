@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "AI Content Generator",
+    "description": "Generate high-quality blog posts, ads, and social media content in seconds.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Unlimited generations", "SEO optimization", "Multi-language support", "Plagiarism check"],
+    "icon": "✍️"
+  },
+  {
+    "id": 2,
+    "name": "Smart Code Assistant",
+    "description": "Real-time code suggestions and bug fixing for professional developers.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["JS/Python/Go support", "VS Code Extension", "Unit test generator", "Git integration"],
+    "icon": "💻"
+  },
+  {
+    "id": 3,
+    "name": "Enterprise Workflow",
+    "description": "Complete productivity suite with AI automation for large scale teams.",
+    "price": 499,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Custom AI models", "Advanced analytics", "24/7 Priority support", "SSO & Security"],
+    "icon": "🚀"
+  },
+  {
+    "id": 4,
+    "name": "Design Magic AI",
+    "description": "Transform text prompts into stunning UI components and vector assets.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "popular",
+    "features": ["Figma plugin", "High-res export", "Color palette generator", "Custom style training"],
+    "icon": "🎨"
+  },
+  {
+    "id": 5,
+    "name": "Data Insight Pro",
+    "description": "Powerful AI to analyze complex data sets and generate visual reports.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "Lifetime Access",
+    "tagType": "new",
+    "features": ["Excel/CSV import", "Interactive charts", "PDF reporting", "Cloud storage"],
+    "icon": "📊"
+  },
+  {
+    "id": 6,
+    "name": "Video Master AI",
+    "description": "Convert long-form videos into viral short-form clips automatically.",
+    "price": 159,
+    "period": "yearly",
+    "tag": "Top Rated",
+    "tagType": "best-seller",
+    "features": ["Auto-captions", "Smart cropping", "Music sync", "Direct social export"],
+    "icon": "🎬"
+  },
+  {
+    "id": 7,
+    "name": "Voice Synthesis Engine",
+    "description": "Create realistic AI voiceovers in any language with human-like emotions.",
+    "price": 35,
+    "period": "monthly",
+    "tag": "Hot",
+    "tagType": "new",
+    "features": ["50+ Voice profiles", "Emotion control", "MP3/WAV Export", "Commercial rights"],
+    "icon": "🎙️"
+  },
+  {
+    "id": 8,
+    "name": "AI SEO Optimizer",
+    "description": "Auto-optimize your website ranking using deep learning algorithms.",
+    "price": 79,
+    "period": "monthly",
+    "tag": "Recommended",
+    "tagType": "popular",
+    "features": ["Keyword research", "Backlink analysis", "Competitor tracking", "Auto-sitemap"],
+    "icon": "🔍"
+  }
+]
