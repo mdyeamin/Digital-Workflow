@@ -43,8 +43,8 @@ const navLinks = navItems.map((nav) => (
   </li>
 ));
 
-const NavBar = ({ cart, setCart }) => {
-  const [menu, setMenu] = useState(false);
+const NavBar = ({ cart, setCart,menu, setMenu }) => {
+  
   return (
     <>
       <div className="shadow w-full md:fixed md:top-0 z-10 bg-white">

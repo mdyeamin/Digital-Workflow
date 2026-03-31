@@ -17,13 +17,14 @@ const digiToolsFetch = axios.get("digitools.json")
 const pricingPromise = axios.get("pricingData.json")
 
 function App() {
-  
+  const [menu, setMenu] = useState(false);
   const [cart,setCart]= useState([])
+    const [products, setProducts] = useState("Products");
 
   return (
     <>
     <nav>
-      <NavBar cart={cart} setCart={setCart}/>
+      <NavBar cart={cart} setCart={setCart} menu={menu} setMenu={setMenu}/>
     </nav>
     <header>
       <Header />
@@ -31,16 +32,17 @@ function App() {
     {/* counter */}
       <Counter/>
       <Suspense fallback={<span className="loading loading-ring loading-xl"></span>}>
-      <DigitalTools cart={cart} setCart={setCart} digiToolsFetch={digiToolsFetch}/>
+      <DigitalTools products={products} setProducts={setProducts} cart={cart} setCart={setCart} digiToolsFetch={digiToolsFetch}/>
       </Suspense>
-      <HowItWorks/>
+     { products === "Products" && <HowItWorks />}
 
-    <Suspense fallback={<span className="loading loading-ring loading-xl"></span>}>
+    {products === "Products" && <Suspense fallback={<span className="loading loading-ring loading-xl"></span>}>
       <Pricing pricingPromise={pricingPromise}/>
-    </Suspense>
+    </Suspense>}
 
-<Newsletter/>
-<Footer/>
+{products === "Products" &&
+  <Newsletter/>}
+{products === "Products" && <Footer/>}
 
 
     <ToastContainer />

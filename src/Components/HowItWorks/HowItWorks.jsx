@@ -1,29 +1,34 @@
-import React from 'react';
-import { FiPackage, FiUser, FiZap } from 'react-icons/fi';
+import React from "react";
+import { FiPackage, FiUser, FiZap } from "react-icons/fi";
 
 const HowItWorks = () => {
-    const steps = [
+  const steps = [
     {
       id: "01",
       title: "Create Account",
-      description: "Sign up for free in seconds. No credit card required to get started.",
+      description:
+        "Sign up for free in seconds. No credit card required to get started.",
       icon: <FiUser className="text-5xl text-[#7922f8]" />,
     },
     {
       id: "02",
       title: "Choose Products",
-      description: "Browse our catalog and select the tools that fit your needs perfectly.",
+      description:
+        "Browse our catalog and select the tools that fit your needs perfectly.",
       icon: <FiPackage className="text-5xl text-[#7922f8]" />,
     },
     {
       id: "03",
       title: "Start Creating",
-      description: "Download and start using your premium tools immediately without delay.",
+      description:
+        "Download and start using your premium tools immediately without delay.",
       icon: <FiZap className="text-5xl text-[#7922f8]" />,
     },
   ];
-    return (
-        <section className="py-20 px-6 bg-gray-50/50">
+  return (
+    
+    
+    <section className="py-20 px-6 bg-gray-50/50">
       <div className="max-w-7xl mx-auto">
         {/* --- Section Header --- */}
         <div className="text-center mb-16">
@@ -64,7 +69,8 @@ const HowItWorks = () => {
         </div>
       </div>
     </section>
-    );
+    
+  );
 };
 
 export default HowItWorks;

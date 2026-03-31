@@ -2,8 +2,8 @@ import React, { use, useState } from "react";
 import DigitalTool from "../DigitalTool/DigitalTool";
 import Carts from "../Carts/Carts";
 
-const DigitalTools = ({ digiToolsFetch, cart,setCart }) => {
-  const [products, setProducts] = useState("Products");
+const DigitalTools = ({ digiToolsFetch, cart,setCart,products,setProducts }) => {
+
   const digiToolsData = use(digiToolsFetch).data;
   const handleProducts = () => {
     setProducts("Products");
