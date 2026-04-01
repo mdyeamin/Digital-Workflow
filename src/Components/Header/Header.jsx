@@ -35,7 +35,7 @@ const Header = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center md:justify-start mt-8">
-            {/* 1. Explore Products Button */}
+            
             <button
               className="
     
@@ -56,7 +56,7 @@ const Header = () => {
               Explore Products
             </button>
 
-            {/* 2. Watch Demo Button */}
+            
             <button
               className="
       group relative px-6 py-2 font-bold uppercase tracking-widest text-[10px] sm:text-xs

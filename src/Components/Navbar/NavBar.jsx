@@ -10,37 +10,33 @@ const navItems = [
   { id: 5, name: "FAQ", url: "/faq" },
 ];
 const navLinks = navItems.map((nav) => (
-  <li key={nav.id} className="list-none group transition-all duration-300">
-    <a
-      href={nav.url}
-      className="
-      
-      block py-3 px-8 
+  <li key={nav.id} className="list-none group transition-all duration-500">
+  <a
+    href={nav.url}
+    className="
+      relative block py-3 px-8 
       bg-white text-black 
       font-bold uppercase tracking-widest text-xs lg:text-sm
-      border-b-2 border-transparent
       transition-all duration-300
-      
       
       hover:text-[#4f38f6]
       
-      group-hover:border-b-2 
-      group-hover:border-[#9315fa]
+      md:inline-block md:py-0 md:px-4 md:bg-transparent
       
-      md:inline-block md:py-0 md:px-4
-      md:bg-white md:text-black
-      
-      
-      md:after:content-[''] md:after:absolute md:after:bottom-0 md:after:left-0 
-      md:after:w-full md:after:h-0.5 
-      md:after:bg-linear-to-r md:after:from-[#4f38f6] md:after:via-[#7922f8] md:after:to-[#9315fa]
-      md:after:transform md:after:scale-x-0 md:hover:after:scale-x-100
-      md:after:transition-transform md:after:duration-300
+      md:after:content-[''] 
+      md:after:absolute 
+      md:after:-bottom-0.5 md:after:left-0 
+      md:after:w-full md:after:h-[4px] 
+      md:after:bg-[linear-gradient(to_right,#4f38f6,#7922f8,#9315fa)]
+      md:after:transform md:after:scale-x-0 
+      md:after:origin-left
+      md:after:transition-transform md:after:duration-500
+      md:hover:after:scale-x-100
     "
-    >
-      {nav.name}
-    </a>
-  </li>
+  >
+    {nav.name}
+  </a>
+</li>
 ));
 
 const NavBar = ({ cart,menu, setMenu }) => {

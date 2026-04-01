@@ -6,7 +6,7 @@ DigiTools is a simple, all-in-one place where you can find smart AI tools, desig
 
 
 # Technology that I used
-DigiTools is a high-performance web app built with React, Tailwind CSS, and DaisyUI, using modern ES6+ JavaScript,ReactJs, tailwindCSS,daisyUI, Toast and Vite to ensure a lightning-fast and seamless user experience.
+DigiTools is a high-performance web app built with React, Tailwind CSS, and DaisyUI, using modern ES6+ JavaScript,ReactJs, tailwindCSS,daisyUI, Toastify, axiosJs, and Vite to ensure a lightning-fast and seamless user experience.
 
 # 3 Features about my project.
 All-in-One AI Marketplace: Access a curated collection of powerful AI tools, from high-converting copy generators to real-time coding companions, all within a single unified platform.

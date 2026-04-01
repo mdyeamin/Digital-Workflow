@@ -17,24 +17,24 @@ const Carts = ({ cart, setCart }) => {
         <Empty />
       ) : (
         <div className=" flex items-center justify-center">
-          {/* Main Cart Container */}
+          
 
           <div className="w-full max-w-4xl bg-white rounded-4xl shadow-sm border border-gray-100 p-4 md:p-8">
-            {/* Title */}
+            
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-8">
               Your Cart
             </h2>
 
-            {/* Cart Items List */}
+            
             <div className="space-y-4 mb-10">
-              {/* Item 1: AI Writing Pro */}
+              
 
               {cart.map((item) => (
                 <Cart key={item.id} item={item} cart={cart} setCart={setCart} />
               ))}
             </div>
 
-            {/* Footer Area */}
+            
             <div className="space-y-6">
               <div className="flex justify-between items-center px-2">
                 <span className="text-gray-400 font-bold">Total:</span>

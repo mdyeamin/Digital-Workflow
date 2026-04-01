@@ -3,12 +3,10 @@ import React from "react";
 const Empty = () => {
   return (
     <div className="flex flex-col items-center justify-center py-10 px-6 bg-white rounded-4xl border-2 border-dashed border-gray-100">
-      {/* Empty Icon/Illustration */}
       <div className="w-24 h-24 bg-gray-50 rounded-full flex items-center justify-center mb-6">
         <span className="text-5xl opacity-50">🛒</span>
       </div>
 
-      {/* Message */}
       <h3 className="text-2xl font-bold text-[#1a1a1a] mb-2">
         Your Cart is Empty
       </h3>
@@ -16,7 +14,7 @@ const Empty = () => {
         Looks like you haven't added any premium tools to your cart yet.
       </p>
 
-      {/* Shop Now / Back to Products Button */}
+      
       <button
         className="
     px-8 py-3 rounded-full text-white font-bold uppercase tracking-widest text-[10px]

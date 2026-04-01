@@ -7,7 +7,6 @@ const Pricing = ({ pricingPromise }) => {
   return (
     <section className="py-20 px-6 bg-gray-50/50">
       <div className="max-w-7xl mx-auto text-center">
-        {/* === Header === */}
         <div className="mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold text-[#1a1a1a] mb-4">
             Simple, Transparent Pricing
@@ -17,7 +16,6 @@ const Pricing = ({ pricingPromise }) => {
           </p>
         </div>
 
-        {/* === Pricing Cards Grid === */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-12">
           {pricingData.map((data) => (
             <PricingCard key={data.id} data={data} />
