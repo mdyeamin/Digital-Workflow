@@ -59,6 +59,27 @@ const NavBar = ({ cart,menu, setMenu }) => {
                 className={`md:hidden absolute top-20 ${menu ? "left-0" : "-left-50"} duration-500 space-y-2 shadow-md border border-gray-300 bg-white z-10`}
               >
                 {navLinks}
+                <p className="md:hidden block
+                
+                relative block py-3 px-8 
+      bg-white text-black 
+      font-bold uppercase tracking-widest text-xs lg:text-sm
+      transition-all duration-300
+      
+      hover:text-[#4f38f6]
+      
+      md:inline-block md:py-0 md:px-4 md:bg-transparent
+      
+      md:after:content-[''] 
+      md:after:absolute 
+      md:after:-bottom-0.5 md:after:left-0 
+      md:after:w-full md:after:h-[4px] 
+      md:after:bg-[linear-gradient(to_right,#4f38f6,#7922f8,#9315fa)]
+      md:after:transform md:after:scale-x-0 
+      md:after:origin-left
+      md:after:transition-transform md:after:duration-500
+      md:hover:after:scale-x-100
+                ">Login</p>
               </ul>
 
               <h4 className="text-xl lg:text-4xl font-bold bg-linear-to-r from-[#4f38f6] via-[#7922f8] to-[#9315fa] bg-clip-text text-transparent">
@@ -86,7 +107,7 @@ const NavBar = ({ cart,menu, setMenu }) => {
                   </span>
                 )}
               </div>
-              <p>Login</p>
+              <p className="hidden md:block">Login</p>
               <button
                 className="
                     text-white px-5 py-2 font-bold uppercase tracking-widest text-[10px]
